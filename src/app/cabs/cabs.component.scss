@@ -1,0 +1,48 @@
+.userList{
+    padding: 0;
+}
+
+.userItem{
+    width: 100%;
+    padding: 15px;
+    display: block;
+    margin: 0 0 10px;
+    background-color: #ddd;
+}
+
+.search-hero{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    height: 50px;
+}
+
+input{
+    padding: 0.5rem;
+    width: 50%;
+    font-size: 1;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+    border: 1px solid black;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    margin-right: 5rem;
+}

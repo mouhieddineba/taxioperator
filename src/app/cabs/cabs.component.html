@@ -1,0 +1,23 @@
+<div class="heading">
+    <button mat-raised-button (click)="back()">
+        <mat-icon>home</mat-icon>
+        Home
+       </button>
+       <h1>Cabs List</h1>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="search-hero">
+            <input type="text" name="search" [(ngModel)]="searchText" placeholder="Search by owner,model, or number">
+        </div>
+    </div>
+</div>
+
+<ul class="userList" *ngIf="cabs">
+    <li class="userItem" *ngFor="let cab of cabs | filter:searchText">
+        <p> Owner : {{  cab.owner }}</p>
+        <p> Model : {{  cab.model}}</p>
+        <p> Nubmer: {{  cab.number}}</p>
+    </li>
+</ul>
